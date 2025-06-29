@@ -54,8 +54,8 @@ Mirel is designed to evolve into a full-fledged survival companion. Imagine bein
 
 ## 🙏 Final Note
 
-This project was built from scratch as a learning journey — not everything works perfectly yet, but the goal was always clear:
-To create an AI that could potentially save lives — even when the internet can't.
+This project was built from the ground up as a personal learning journey — with limited time and knowledge, I dove into creating my first AI agent. It’s not perfect, but every piece reflects a clear goal: to design an AI that could one day help save lives, even when the internet can’t.
+
 
 
 ## 📹 Demo Video
