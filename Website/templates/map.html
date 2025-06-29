@@ -1,0 +1,42 @@
+<!-- map.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Offline Map Viewer</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    #map {
+      height: 90vh;
+      width: 100%;
+      border-radius: 15px;
+      margin: 20px auto;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    h1 {
+      margin-top: 20px;
+      color: #2e3a59;
+    }
+  </style>
+</head>
+<body>
+  <h1>🗺️ Mirel Offline Map</h1>
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    const map = L.map('map').setView([latitude, longitude], zoomLevel);
+    L.tileLayer('/tiles/{z}/{x}/{y}.png', {
+      minZoom: 0,
+      maxZoom: 6,
+      attribution: '&copy; Offline India Map'
+    }).addTo(map);
+  </script>
+</body>
+</html>

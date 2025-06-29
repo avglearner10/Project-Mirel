@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mirel – Ask AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 Ask Mirel</h1>
+        <p>Ask about survival tips, plant usage, or first aid!</p>
+
+        <form method="POST">
+            <textarea name="question" placeholder="Type your survival question..." required></textarea>
+            <br>
+            <button type="submit" class="btn">Get Answer</button>
+        </form>
+
+        {% if response %}
+        <div class="response-box">
+            <h3>🧠 Mirel Says:</h3>
+            <p>{{ response }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
