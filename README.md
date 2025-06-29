@@ -56,6 +56,9 @@ This project was built from scratch as a learning journey — not everything wor
 To create an AI that could potentially save lives — even when the internet can't.
 
 
+📹 Demo Video
+Watch a short demo of Project Mirel in action:  
+👉 [Project Mirel - Demo Video]
 
 
 Thank you for reading 💚
